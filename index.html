@@ -8,10 +8,12 @@
 <head>
     <link rel="stylesheet" href = "fonts.css">
     <link rel="stylesheet" href = "style.css">
+    <link  rel="javascript" href="index.js">
     <link rel="icon" type="logo.png" href="logo.png" />
 
-
+<marquee behavior=slide direction= right>
     <p class="hecho"><font color= "yellow">"Hecho</font><font color="blue"> en Vene</font><font color="red">zuela"</font> </p>
+</marquee>
     
     <h3 class="bienvenidos"><font color="gray"> Bienvenidos a BootCampCcs</font></h3>
     <h3 class="somos"><font color="gray">Somos más que un entrenamiento</font></h3>
@@ -51,23 +53,29 @@
 </div> 
 </ul>
 </nav>
+<section class="body2">
+<script>
+var i=0;
+var images = [];
+var time= 3000;
+images[0] = "sexta.jpg"
+images[1] = "portadaslider.png"
+images[2] = "sexta.jpg"
+images[3] = "fotobajologo.png"
+function changeImg() {
+    document.slide.src= images[i];
+    if(i< images.length-1) {
+        i++;    } else{
+            i = 0;
+        }
+ setTimeout("changeImg()" , time);
+}
+window.onload = changeImg;
+</script>
+<img name= "slide" width="700" height="500">
 
-<div class="contenedor">
-    
-    <img class="img"style="width: 900px; height:400px;"src="sexta.jpg" 
-    alt= "boot camp"/>
-    <img class="top" style="width: 850px; height:300px;"src="portadaslider1.jpg" 
-    alt= "boot camp"/>
-    
-    </div>
-<div class="contenedor">
-   
-    <img class="img1" style="width: 850px; height:300px;"src="portadaslider1.jpg" 
-          alt= "boot camp"/>
-    <img class="top1" style="width: 900px; height:400px;"src="sexta.jpg" 
-    alt= "boot camp"/>
-   
-    </div>
+</section>
+  
 
  <header>
      <h1 class="Boot-Camp"><font color="gray"> BootCamp</font></h1>
@@ -110,7 +118,7 @@
     
 <article>
     <h1 class="bootcampccssubtitulo"><font face="verdana"><font color="gray">Que hacemos en bootcampccs:</font> </font></h1>
-    <time> <datetime = "22 dejulio 2016 "></datetime></time>
+  
     <div  class="tr" style="text-align: center;">
     <table  style="margin-left: 2cm;">
         <tr class="tr">
@@ -133,9 +141,11 @@ Entrenar en bootcampccs será una experiencia divertida y dinàmica que consta d
         <img style="width:800px; height:500px;"src="actbootcampcc.jpg"/>
     </center>
 </td>
-<a >
-<img class="logo1"src="logo.png"  alt= "boot camp"/>
+
+<a class="logocenter" >
+ <img  class="logo1"src="logo.png">
 </a>
+
 <p class="td2">
   En bootcampccs contamos con el<font face="cursive"> Head Coach Erick Medina, maratonista, crossfitter</font> quien se ha especializado en rutinas de alta intensidad, ejercicios aerobicos, resistencia, fuerza y flexibilidad, con certificaciones deportivas avaladas internacionalmente asi como seminarios, cursos y congresos de actividades dirigidas, fitness y nutriciòn de las principales instituciones locales e internacionales. 
           
@@ -171,7 +181,7 @@ Entrenar en bootcampccs será una experiencia divertida y dinàmica que consta d
             
     <p class="td3"> * Es una excelente actividad para combatir el estrés y eliminar los estados de ansiedad debido que los ejercicios son realizados al aire libre en pleno contacto con la naturalez. </p>
     <p class="td3">* En pocas semanas puedes observar cambios significativos en la pérdida de peso y oxidar grasa corporal de forma eficaz. </p>
-    <p class="td3"> *En una clase regular de boot camps podrás quemar alrededor de 600 calorías en solo 60 minutos de entrenamiento Incrementar tu fuerza hasta un 50% más en las primeras semanas </p>
+    <p class="td3"> *En una clase regular de boot camps podrás quemar alrededor de 600 calorías en solo 60 minutos de entrenamiento incrementar tu fuerza hasta un 50% más en las primeras semanas </p>
      <p class="td3">*Ya desde las primeras semanas mejora tu salud cardiovascular, el cuerpo aumenta su capacidad de resistencia</p> 
      <p class="td3">*La práctica regular de esta disciplina disminuye el riesgo de tener episodios depresivos y combate la fatiga </p>
     <p class="td3"> *Representa una excelente alternativa para aumentar la autoestima y la toma de decisiones </p>
